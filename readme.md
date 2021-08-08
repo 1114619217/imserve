@@ -1,6 +1,6 @@
-###6.1 UDP协议实现分布式
+### UDP协议实现分布式
 
-####6.1.1 支持分布式
+#### 支持分布式
 回顾单体应用
 开启ws接收协程recvproc/ws发送协程sendproc
 websocket收到消息->dispatch发送给dstid
@@ -13,9 +13,9 @@ websocket收到消息->broadMsg广播到局域网
 udp接收到收到消息->dispatch发送给dstid
 自己是局域网一份子,所以也能接收到消息
 
-####6.1.2 实现
+#### 实现
 
-####6.1.3 nginx反向代理
+#### nginx反向代理
 ```html
 	upstream wsbackend {
 			server 192.168.0.102:8080;
@@ -44,7 +44,7 @@ udp接收到收到消息->dispatch发送给dstid
 
 }
 ```
-####6.3 打包发布
+#### 打包发布
 #windows平台
 ```bash
 ::remove dir
